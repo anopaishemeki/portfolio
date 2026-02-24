@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -32,6 +32,9 @@
   </head>
 
   <body>
+    <!-- Animated Bubbles Background -->
+    <div class="bubbles-container" id="bubblesContainer"></div>
+
     <!--
     - #MAIN
   -->
@@ -43,14 +46,6 @@
 
       <aside class="sidebar" data-sidebar>
         <div class="sidebar-info">
-          <figure class="avatar-box">
-            <img
-              src="./assets/images/rasta.png"
-              alt="Christopher A Meki"
-              width="80"
-            />
-          </figure>
-
           <div class="info-content">
             <h1 class="name" title="Christopher A Meki">Christopher A Meki</h1>
 
@@ -96,7 +91,7 @@
               </div>
             </li>
 
-            <li class="contact-item">
+            <!-- <li class="contact-item">
               <div class="icon-box">
                 <ion-icon name="calendar-outline"></ion-icon>
               </div>
@@ -106,7 +101,7 @@
 
                 <time datetime="1999-12-19">December 19, 1999</time>
               </div>
-            </li>
+            </li> -->
 
             <li class="contact-item">
               <div class="icon-box">
@@ -135,7 +130,7 @@
             </li>
             <li class="social-item">
               <a
-                href="https://www.linkedin.com/in/anopaishe-meki-664676206"
+                href="https://www.linkedin.com/in/anopaishemeki"
                 class="social-link"
                 target="_blank"
               >
@@ -144,7 +139,7 @@
             </li>
             <li class="social-item">
               <a
-                href="https://www.facebook.com/AnoeChrisyMeki"
+                href="https://www.facebook.com/anoecm"
                 class="social-link"
                 target="_blank"
               >
@@ -153,17 +148,18 @@
             </li>
 
             <li class="social-item">
-              <a href="https://twitter.com/KiddReact" 
-                 class="social-link"
-                 target="_blank"
-                 >
+              <a
+                href="https://twitter.com/KiddReact"
+                class="social-link"
+                target="_blank"
+              >
                 <ion-icon name="logo-twitter"></ion-icon>
               </a>
             </li>
 
             <li class="social-item">
               <a
-                href="https://www.instagram.com/anoe_chrisy"
+                href="https://www.instagram.com/anoe_cm"
                 class="social-link"
                 target="_blank"
               >
@@ -186,7 +182,7 @@
         <nav class="navbar">
           <ul class="navbar-list">
             <li class="navbar-item">
-              <button class="navbar-link active" data-nav-link>About</button>
+              <button class="navbar-link active" data-nav-link>Profile</button>
             </li>
 
             <li class="navbar-item">
@@ -195,12 +191,26 @@
             <li class="navbar-item">
               <button class="navbar-link" data-nav-link>Skills</button>
             </li>
-            <!-- <li class="navbar-item">
-              <button class="navbar-link" data-nav-link>Portfolio</button>
-            </li> -->
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Certificates</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Projects</button>
+            </li>
 
             <li class="navbar-item">
               <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+
+            <li class="navbar-item">
+              <button
+                class="theme-toggle-btn"
+                id="themeToggle"
+                title="Toggle dark/light mode"
+              >
+                <ion-icon name="moon"></ion-icon>
+              </button>
             </li>
           </ul>
         </nav>
@@ -211,23 +221,25 @@
 
         <article class="about active" data-page="about">
           <header>
-            <h2 class="h2 article-title">About me</h2>
+            <h2 class="h2 article-title">Profile</h2>
           </header>
 
           <section class="about-text">
             <p>
-              I'm a qualified and professional software developer with three
-              years of experience in full-stack software development. Strong
-              creative and analytical skils. Team player with eye for detail.
+              Java 21 Oracle Certified and Spring Certified Professional (2024
+              v2) with 2+ years of full-stack experience building scalable
+              applications using Java, Spring Boot, REST APIs, microservices,
+              and USSD telecom services. Experienced in developing
+              high-availability mobile network solutions, including airtime
+              credit and transaction workflows for telecom subscribers.
             </p>
 
             <p>
-              My job is to build your business systems and websites so that it
-              is functional and user-friendly but at the same time attractive.
-              Moreover, I add personal touch to your product and make sure that
-              is eye-catching and easy to use. My aim is to bring across your
-              message and identity in the most creative way. I created web
-              design for many famous brand companies.
+              Skilled in React, Next.js, Angular, and React Native, with
+              hands-on experience in database optimization, authentication,
+              CI/CD pipelines, containerization, and cloud-ready deployments.
+              Strong focus on clean architecture, performance, reliability, and
+              maintainable code.
             </p>
           </section>
 
@@ -577,6 +589,77 @@
                 <ion-icon name="book-outline"></ion-icon>
               </div>
 
+              <h3 class="h3">Experience</h3>
+            </div>
+
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Full-Stack Software Developer
+                </h4>
+                <h5 class="h5 timeline-item-title">
+                  Econet Wireless (OmniContact) – Harare, ZW
+                </h5>
+
+                <span>June 2024 — Present</span>
+
+                <p class="timeline-text">
+                  Developed new features and maintained the *179 USSD airtime
+                  credit service for Econet Wireless, supporting
+                  high-availability airtime advance transactions and reliable
+                  access for subscribers across telecom networks. Developed an
+                  AI chatbot to automate customer service, enhancing response
+                  times and user satisfaction. Collaborated on a performance
+                  management system, streamlining workflows and boosting call
+                  center productivity by 70%. Participated in system
+                  architecture design and code reviews.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Junior Software Engineer</h4>
+                <h5 class="h5 timeline-item-title">
+                  Sesfont Technologies – REMOTE, SA
+                </h5>
+
+                <span>October 2023 — June 2024</span>
+
+                <p class="timeline-text">
+                  Maintained, upgraded and developed features for the Ghana
+                  Deposit Protection Corporation (GDPC) System. Developed
+                  bespoke web applications for clients from start to end. Part
+                  of the team that handles banking system solutions for several
+                  banks in the Southern Africa Region. Designed and implemented
+                  a financial module for a School Management System, handling
+                  student fees, payments, and financial reporting. Automated the
+                  extraction and processing of large datasets from legacy
+                  systems using SQL and Perl scripts.
+                </p>
+              </li>
+
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Software Engineer Intern</h4>
+                <h5 class="h5 timeline-item-title">CICOSY Ltd – Harare, ZW</h5>
+
+                <span>August 2021 — July 2022</span>
+
+                <p class="timeline-text">
+                  Collaborated with senior developers on web app design,
+                  development, and deployment. Gained experience in
+                  troubleshooting, performance optimization, and user
+                  experience. Contributed to the development of Car Park Payment
+                  System and Tenant Management System projects.
+                </p>
+              </li>
+            </ol>
+          </section>
+
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
               <h3 class="h3">Education</h3>
             </div>
 
@@ -646,71 +729,7 @@
             </ol>
           </section>
 
-          <section class="timeline">
-            <div class="title-wrapper">
-              <div class="icon-box">
-                <ion-icon name="book-outline"></ion-icon>
-              </div>
-
-              <h3 class="h3">Experience</h3>
-            </div>
-
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">Freelance Developer</h4>
-
-                <span>2020 — Present</span>
-
-                <p class="timeline-text">
-                  Extensive experience in freelance software development,
-                  delivering high-quality solutions to diverse clients.
-                  Proficient in front-end technologies such as React JS and Next
-                  JS, also mobile frameworks such as React Native, as well as
-                  back-end frameworks like Java Springboot, .NET Framework
-                  (ASP.NET Core Web Api) and Node.js(Express JS). Skilled in
-                  full-stack development, including front-end and back-end
-                  technologies. Proven ability to understand client
-                  requirements, design effective solutions, and deliver projects
-                  within deadlines. Strong problem-solving skills and attention
-                  to detail to ensure robust and efficient software products.
-                  Excellent communication and collaboration skills, adept at
-                  working independently or as part of a team to achieve project
-                  goals. Portfolio showcasing successful projects and client
-                  testimonials available upon request.
-                </p>
-              </li>
-
-              <li class="timeline-item">
-                <h4 class="h4 timeline-item-title">
-                  Full-Stack Developer Internship
-                </h4>
-                <h5 class="h5 timeline-item-title">CICOSY Private Limited</h5>
-
-                <span>2021 — 2022</span>
-
-                <p class="timeline-text">
-                  Engaged in a dynamic internship role, gaining hands-on
-                  experience in full-stack web development. Collaborated with
-                  senior developers to design, develop, and deploy scalable web
-                  applications. Demonstrated ability to troubleshoot issues,
-                  optimize performance, and implement enhancements to improve
-                  user experience. Contributed to agile development processes,
-                  participating in sprint planning, code reviews, and team
-                  meetings. Applied problem-solving skills and creativity to
-                  overcome challenges and deliver innovative solutions. Actively
-                  sought feedback, learned new technologies, and adapted to
-                  evolving project requirements. Committed to continuous
-                  improvement and professional growth in the field of full-stack
-                  development.
-                  <span></span>
-                  During my time with company we manage to develop a Car Park
-                  Payment System and a Tenant Management System.
-                </p>
-              </li>
-            </ol>
-          </section>
-
-          <section class="skill">
+          <!-- <section class="skill">
             <h3 class="h3 skills-title">My attributes</h3>
 
             <ul class="skills-list content-card">
@@ -738,7 +757,9 @@
 
               <li class="skills-item">
                 <div class="title-wrapper">
-                  <h5 class="h5">Adaptable and committement to continuous learning</h5>
+                  <h5 class="h5">
+                    Adaptable and committement to continuous learning
+                  </h5>
                   <data value="90">90%</data>
                 </div>
 
@@ -749,7 +770,9 @@
 
               <li class="skills-item">
                 <div class="title-wrapper">
-                  <h5 class="h5">Proficiency in programming languages and development tools</h5>
+                  <h5 class="h5">
+                    Proficiency in programming languages and development tools
+                  </h5>
                   <data value="80">80%</data>
                 </div>
 
@@ -758,7 +781,7 @@
                 </div>
               </li>
             </ul>
-          </section>
+          </section> -->
         </article>
         <!--
                     - #SKILLS
@@ -772,13 +795,12 @@
           <section class="blog-posts">
             <ul class="blog-posts-list">
               <li class="blog-post-item">
-                <a >
+                <a>
                   <figure class="blog-banner-box">
                     <img
                       src="./assets/images/springboot-1.png"
                       alt="JAVA Spring Boot"
                       loading="lazy"
-                      
                     />
                   </figure>
 
@@ -919,282 +941,228 @@
           </section>
         </article>
         <!--
-        - #PORTFOLIO
+        - #CERTIFICATES
       -->
 
-        <article class="portfolio" data-page="portfolio">
+        <article class="certificates" data-page="certificates">
           <header>
-            <h2 class="h2 article-title">Portfolio</h2>
+            <h2 class="h2 article-title">Certificates</h2>
           </header>
 
-          <section class="projects">
-            <ul class="filter-list">
-              <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Web design</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Applications</button>
-              </li>
-
-              <li class="filter-item">
-                <button data-filter-btn>Web development</button>
-              </li>
-            </ul>
-
-            <div class="filter-select-box">
-              <button class="filter-select" data-select>
-                <div class="select-value" data-selecct-value>
-                  Select category
-                </div>
-
-                <div class="select-icon">
-                  <ion-icon name="chevron-down"></ion-icon>
-                </div>
-              </button>
-
-              <ul class="select-list">
-                <li class="select-item">
-                  <button data-select-item>All</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Web design</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Applications</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Web development</button>
-                </li>
-              </ul>
-            </div>
-
-            <ul class="project-list">
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-1.jpg"
-                      alt="finance"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Finance</h3>
-
-                  <p class="project-category">Web development</p>
+          <section class="certificates-grid">
+            <ul class="certificates-list">
+              <li class="certificate-item">
+                <a
+                  href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=B3B69D79159CE510A08351A73E7BADAB963E22C06B6625B5025EF877A3D26454"
+                  target="_blank"
+                  class="certificate-card"
+                >
+                  <div class="certificate-badge">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                  </div>
+                  <h4 class="h4 certificate-title">
+                    Oracle Certified Professional: Java SE 21 Developer
+                  </h4>
+                  <p class="certificate-issuer">Oracle</p>
                 </a>
               </li>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-2.png"
-                      alt="orizon"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Orizon</h3>
-
-                  <p class="project-category">Web development</p>
+              <li class="certificate-item">
+                <a
+                  href="https://www.credly.com/badges/c46f7115-7572-4e48-a45b-c9245bedc9e8/public_url"
+                  target="_blank"
+                  class="certificate-card"
+                >
+                  <div class="certificate-badge">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                  </div>
+                  <h4 class="h4 certificate-title">
+                    Spring Certified Professional 2024 [v2]
+                  </h4>
+                  <p class="certificate-issuer">Credly</p>
                 </a>
               </li>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-3.jpg"
-                      alt="fundo"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Fundo</h3>
-
-                  <p class="project-category">Web design</p>
+              <li class="certificate-item">
+                <a
+                  href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=E75EDC13C3B3CB12989874A5E7D12CBAEA32E3997AC813133F9252A600E0A3D9"
+                  target="_blank"
+                  class="certificate-card"
+                >
+                  <div class="certificate-badge">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                  </div>
+                  <h4 class="h4 certificate-title">
+                    Oracle Cloud Infrastructure 2025 Certified Data Science
+                    Professional
+                  </h4>
+                  <p class="certificate-issuer">Oracle</p>
                 </a>
               </li>
 
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-4.png"
-                      alt="brawlhalla"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Brawlhalla</h3>
-
-                  <p class="project-category">Applications</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-5.png"
-                      alt="dsm."
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">DSM.</h3>
-
-                  <p class="project-category">Web design</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web design"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-6.png"
-                      alt="metaspark"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">MetaSpark</h3>
-
-                  <p class="project-category">Web design</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-7.png"
-                      alt="summary"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Summary</h3>
-
-                  <p class="project-category">Web development</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="applications"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-8.jpg"
-                      alt="task manager"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Task Manager</h3>
-
-                  <p class="project-category">Applications</p>
-                </a>
-              </li>
-
-              <li
-                class="project-item active"
-                data-filter-item
-                data-category="web development"
-              >
-                <a href="#">
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <ion-icon name="eye-outline"></ion-icon>
-                    </div>
-
-                    <img
-                      src="./assets/images/project-9.png"
-                      alt="arrival"
-                      loading="lazy"
-                    />
-                  </figure>
-
-                  <h3 class="project-title">Arrival</h3>
-
-                  <p class="project-category">Web development</p>
+              <li class="certificate-item">
+                <a
+                  href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=E75EDC13C3B3CB12989874A5E7D12CBAD91084DE171742785C0B5636E00B38C5"
+                  target="_blank"
+                  class="certificate-card"
+                >
+                  <div class="certificate-badge">
+                    <ion-icon name="checkmark-circle-outline"></ion-icon>
+                  </div>
+                  <h4 class="h4 certificate-title">
+                    Oracle Cloud Infrastructure 2025 DevOps Professional
+                  </h4>
+                  <p class="certificate-issuer">Oracle</p>
                 </a>
               </li>
             </ul>
           </section>
         </article>
+        <!--
+        - #PROJECTS
+      -->
+
+        <article class="projects" data-page="projects">
+          <header>
+            <h2 class="h2 article-title">Projects</h2>
+          </header>
+
+          <section class="blog-posts">
+            <ul class="blog-posts-list">
+              <li class="blog-post-item">
+                <div class="blog-content-project">
+                  <h3 class="h3 blog-item-title">
+                    Econet Wireless *179# USSD Airtime Credit Service
+                  </h3>
+                  <p class="blog-text-project">
+                    Developed new features and maintained the *179# USSD service
+                    for Econet Wireless, supporting high-availability airtime
+                    advance transactions and reliable access for subscribers
+                    across telecom networks.
+                  </p>
+                  <div class="blog-meta">
+                    <span class="project-tag">Java</span>
+                    <span class="project-tag">Spring Boot</span>
+                    <span class="project-tag">USSD</span>
+                    <span class="project-tag">Microservices</span>
+                  </div>
+                </div>
+              </li>
+              <li class="blog-post-item">
+                <div class="blog-content-project">
+                  <h3 class="h3 blog-item-title">
+                    Ghana Deposit Protection Corporation System
+                  </h3>
+                  <p class="blog-text-project">
+                    Maintain, upgrade and develop features/APIs for the Ghana
+                    Deposit Protection Corporation (GDPC) System.
+                  </p>
+                  <div class="blog-meta">
+                    <span class="project-tag">C#</span>
+                    <span class="project-tag">.NET</span>
+                    <span class="project-tag">MSSQL</span>
+                    <span class="project-tag">XML</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="blog-post-item">
+                <div class="blog-content-project">
+                  <h3 class="h3 blog-item-title">School Management System</h3>
+                  <p class="blog-text-project">
+                    Developed and integrated a financial module to manage
+                    student fees, payments, and invoice generation. Implemented
+                    automated fee calculations, transaction tracking, and
+                    financial reporting dashboards. Designed and implemented a
+                    system to manage student records, class scheduling, grading,
+                    and teacher assignments.
+                  </p>
+                  <div class="blog-meta">
+                    <span class="project-tag">JavaScript</span>
+                    <span class="project-tag">Node.js</span>
+                    <span class="project-tag">Express</span>
+                    <span class="project-tag">PostgreSQL</span>
+                    <span class="project-tag">React</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="blog-post-item">
+                <div class="blog-content-project">
+                  <h3 class="h3 blog-item-title">
+                    Customer Service AI Chatbot
+                  </h3>
+                  <p class="blog-text-project">
+                    Developed an AI chatbot to automate customer service,
+                    improving response times and user satisfaction. Integrated
+                    with business systems for seamless customer interaction and
+                    support.
+                  </p>
+                  <div class="blog-meta">
+                    <span class="project-tag">Python</span>
+                    <span class="project-tag">JavaScript</span>
+                    <span class="project-tag">Botpress</span>
+                    <span class="project-tag">Next.js</span>
+                    <span class="project-tag">PostgreSQL</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="blog-post-item">
+                <div class="blog-content-project">
+                  <h3 class="h3 blog-item-title">
+                    Performance Management System
+                  </h3>
+                  <p class="blog-text-project">
+                    Streamlined workflows and introduced transparent tracking of
+                    call center agents productivity. Contributed to a
+                    significant 70% increase in overall productivity through
+                    system optimization and reporting.
+                  </p>
+                  <div class="blog-meta">
+                    <span class="project-tag">Spring Boot</span>
+                    <span class="project-tag">Next.js</span>
+                    <span class="project-tag">PostgreSQL</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="blog-post-item">
+                <div class="blog-content-project">
+                  <h3 class="h3 blog-item-title">Car Park Payment System</h3>
+                  <p class="blog-text-project">
+                    Developed a complete car park payment system handling
+                    parking allocations, payments, and user management.
+                    Implemented secure payment processing and reporting features
+                    for parking administrators.
+                  </p>
+                  <div class="blog-meta">
+                    <span class="project-tag">Full-Stack</span>
+                    <span class="project-tag">Web Development</span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="blog-post-item">
+                <div class="blog-content-project">
+                  <h3 class="h3 blog-item-title">Tenant Management System</h3>
+                  <p class="blog-text-project">
+                    Built a comprehensive tenant management system for property
+                    owners and landlords, handling tenant records, lease
+                    agreements, maintenance requests, and payment tracking.
+                  </p>
+                  <div class="blog-meta">
+                    <span class="project-tag">Full-Stack</span>
+                    <span class="project-tag">Web Development</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+        <!--
+        - #PORTFOLIO
+      -->
 
         <!--
         - #CONTACT
@@ -1215,16 +1183,22 @@
               ></iframe>
             </figure>
           </section>
-          
+
           <section class="contact-form">
             <h3 class="h3 form-title">Contact Form</h3>
 
-            <form action="https://api.web3forms.com/submit" method="POST" class="form" data-form>
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              class="form"
+              data-form
+            >
               <div class="input-wrapper">
-                <input 
-                type="hidden" 
-                name="access_key" 
-                value="5307e26c-ed27-44a0-bedf-e13cd8527c98">
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="5307e26c-ed27-44a0-bedf-e13cd8527c98"
+                />
                 <input
                   type="text"
                   name="fullname"

@@ -10,7 +10,9 @@ const themeToggleBtn = document.getElementById("themeToggle");
 const body = document.body;
 
 // Get system preference for dark mode
-const systemPrefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+const systemPrefersDark = window.matchMedia(
+  "(prefers-color-scheme: dark)",
+).matches;
 const systempreference = systemPrefersDark ? "dark" : "light";
 
 // Check for saved theme preference, otherwise use system preference
@@ -27,14 +29,16 @@ function updateThemeIcon(theme) {
 }
 
 // Listen for system theme changes
-window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", (e) => {
-  // Only auto-switch if user hasn't manually set a preference
-  if (!localStorage.getItem("theme")) {
-    const newTheme = e.matches ? "dark" : "light";
-    body.setAttribute("data-theme", newTheme);
-    updateThemeIcon(newTheme);
-  }
-});
+window
+  .matchMedia("(prefers-color-scheme: dark)")
+  .addEventListener("change", (e) => {
+    // Only auto-switch if user hasn't manually set a preference
+    if (!localStorage.getItem("theme")) {
+      const newTheme = e.matches ? "dark" : "light";
+      body.setAttribute("data-theme", newTheme);
+      updateThemeIcon(newTheme);
+    }
+  });
 
 themeToggleBtn.addEventListener("click", function () {
   const currentTheme = body.getAttribute("data-theme") || systempreference;
